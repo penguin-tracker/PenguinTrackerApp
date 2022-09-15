@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int Port = 50000;
     private String Hosts[] =  {
-            "diselectronico.duckdns.org",
+            "diselectronico2022.duckdns.org",
             "3.217.109.115",
             "44.210.187.188",
             "34.228.62.220",
@@ -127,8 +127,8 @@ public class MainActivity extends AppCompatActivity {
                 SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-                date = ""+dateFormat.format(dateTime);
-                time = ""+timeFormat.format(dateTime);
+                date = ""+dateFormat.format(dateTime).toString();
+                time = ""+timeFormat.format(dateTime).toString();
                 latitude = "" + location.getLatitude();
                 longitude = "" + location.getLongitude();
 
